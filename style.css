@@ -12,7 +12,15 @@ a {
     justify-content: space-between;
     width: 300px;
   }
-  
+
+  .btn {
+    border: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 30px;
+    border-radius: 30px;
+  }
+
   .line:before {
     content: "";
     position: absolute;
@@ -29,27 +37,62 @@ a {
   }
   
   main {
+    z-index: 1;
     position: relative;
     width: 100%;
-    top: 80px;
+    height: 100%;
     background-color: #fff;
-    /* height: 未定px; */
+    opacity: 1;
     display: block;
   }
   
+  .firstscreen {
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(255,255,255,0);
+    opacity: 1;
+  }
+
   /* ホーム */
   
   .home {
-    position: relative;
-    width: 100% - padding-left;
-    padding-left: 50px;
-    top: 20px;
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+  }
+
+  .homescript {
+    padding-top: 120px;
+    padding-left: 20px;
+  }
+
+  .home h1 {
     font-size: 80px;
-    height:600px
+  }
+
+  .home h2 {
+    font-size: 30px;
   }
   
   .home p {
     font-size: 20px;
+  }
+
+/* スクロールダウン */
+
+  .scrolldown {
+    position: absolute;
+    text-align: center;
+    left: 36%;
+    bottom: 1%;
+  }
+
+  @media screen and (min-width: 960px){
+    .scrolldown {
+      position: absolute;
+      left: 41%;
+    }
   }
   
   /* アバウト */
@@ -58,11 +101,18 @@ a {
     position:relative;
     width: 100% - padding-left;
     padding-left: 50px;
-    top: 150px;
-    font-size: 40px;
+    padding-top: 120px;
     height: 600px;
   }
   
+  .about h1 {
+    font-size: 40px;
+    padding: 20px 0px;
+  }
+  .about h2 {
+    font-size: 30px;
+  }
+
   .about p {
     font-size: 20px;
   }
@@ -105,6 +155,7 @@ a {
     left: 0;
     right: 0;
     z-index: 999;
+    opacity: 0.8;
   }
   
   @media screen and (min-width: 960px) {
