@@ -13,7 +13,7 @@ a {
     width: 300px;
   }
 
-  .btn {
+  .header-btn {
     border: none;
     color: #fff;
     background-color: #000;
@@ -56,6 +56,8 @@ a {
   /* ホーム */
   
   .home {
+    background-color: rgb(89, 71, 194);
+    color: rgb(255, 255, 255);
     z-index: -1;
     position: fixed;
     width: 100vw;
@@ -82,16 +84,17 @@ a {
 /* スクロールダウン */
 
   .scrolldown {
+    color: #fff;
     position: absolute;
     text-align: center;
-    left: 36%;
+    left: 43%;
     bottom: 1%;
   }
 
   @media screen and (min-width: 960px){
     .scrolldown {
       position: absolute;
-      left: 41%;
+      left: 45%;
     }
   }
   
@@ -101,8 +104,8 @@ a {
     position:relative;
     width: 100% - padding-left;
     padding-left: 50px;
-    padding-top: 120px;
-    height: 600px;
+    padding-top: 24vh;
+    height: 76vh;
   }
   
   .about h1 {
@@ -117,10 +120,47 @@ a {
     font-size: 20px;
   }
   
+  /* プロジェクト */
+  
+  .projects{
+    width: 100% - padding-left;
+    padding-top: 24vh;
+    padding-left: 50px;
+    height: 76vh;
+    background-color: #eee;
+  }
+
+  .projects h2 {
+    font-size: 30px;
+  }
+
+  .projects h1 {
+    font-size: 60px;
+    padding: 10px;
+  }
+
+  .project {
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    width: 300px;
+    height: 400px;
+  }
+
+  .js-img{
+    width: 30px;
+  }
+
   /* ジョイン */
   
   .join {
     position: relative;
+  }
+
+  .join-btn {
+    border: none;
+    padding: 15px 35px;
+    background-color:#fff ;
   }
   
   /* フッター */
