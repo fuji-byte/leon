@@ -1,0 +1,403 @@
+a {
+  text-decoration: none;
+}
+
+ul,li {
+  list-style: none;
+} 
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y proximity;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --scroll-scroll-snap-type: y proximity;
+  /* --sstart-scroll-snap-start: */
+  --padding: 9vw 0 4vw 5vw ;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.subtitle {
+  font-size: 50px;
+}
+
+main {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.area {
+  /* scroll-snap-align: start; */
+  
+  height: 100vh;
+  width: 100vw;
+  padding: var(--padding);
+  position: absolute;
+}
+
+/* ホーム */
+
+.home {
+  background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
+  color: #ffffff;
+  padding-top: 30vh;
+}
+
+.home h1{
+  font-size: 80px;
+}
+
+.home p {
+  font-size: 20px;
+}
+
+/* アバウト */
+
+.about {
+  background-color: #a9a9a9;
+  top: 100vh;
+}
+
+.about p {
+  font-size: 20px;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+/* プロジェクト */
+
+.projects {
+  background-color: #e15454;
+  top: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contents {
+  margin-top: 15px;
+  height: 60vh;
+  width: 25vw;
+  align-items: center;
+  text-align: left;
+  padding: 5vh 2.5vw 0;
+  border-radius: 30px;
+  border: 1px solid #000;
+  background-color: #eae9e9;
+}
+
+.projects .date {
+  font-weight: bold;
+  padding: 8px 0 4px;
+  font-size: 10px;
+}
+
+.projects .minititle {
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+.projects .sentence {
+  font-size: 10px;
+}
+
+.projects .pic {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sur {
+  height: 20vh;
+  width: 20vw;
+  border: 1px solid #000;
+}
+
+/* ジョイン */
+
+.join {
+  top: 300vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.join .char{
+  margin-bottom: 10vh;
+}
+
+.join {
+  font-size: 20px
+}
+
+.btn {
+  /* 枠線を消す */
+  border: none;
+  /* クリックした際に枠線をnone消す */
+  /* outline: none; */
+  display: inline-block;
+  gap: 20px;
+  /* justify-content: space-between; */
+  background-color: #fff;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid#000;
+}
+
+/* フッター */
+
+footer {
+  position: relative;
+  top: 400vh;
+  width: 100dvw;
+  background-color: #202523;
+  height: 100px;
+}
+
+footer div {
+  margin-top: 25px;
+  width: 100%;
+} 
+
+/* フッターのアイコン */
+footer i {
+  color:#fff;
+  float: right;
+  font-size: 50px;
+  padding-right: 20px;
+}
+
+/* ヘッダー */
+
+.Versear {
+  font-size: 30px;
+}
+
+.Versear::after {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 80%;
+  margin-left: 10px;
+  background-color: black;
+}
+
+.versear {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: serif;
+}
+
+header {
+  background-color: white;
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  opacity: .7;
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    height: 80px;
+  }
+}
+
+.header__title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 300px;
+}
+
+header .joinbtn {
+  border: none;
+  color: #fff;
+  background-color: #000;
+  padding: 13px 40px;
+  border-radius: 30px;
+}
+
+.header__inner {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  position: relative;
+}
+
+/* ヘッダーのナビ部分 */
+
+.header__nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: ease .4s;
+  display: flex;
+}
+
+@media screen and (min-width: 960px) {
+  .header__nav {
+    position: static;
+    transform: initial;
+    background-color: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: end;
+    width: 40%;
+  }
+}
+
+.nav__items {
+  margin: auto;
+}
+
+@media screen and (min-width: 960px) {
+  .nav__items {
+    margin: initial;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: initial;
+    justify-content: space-between;
+  }
+}
+
+.nav-items__item {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+@media screen and (min-width: 960px) {
+
+  .nav-items__item:before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: orange;
+    opacity: 0;
+
+  }
+
+  .nav-items__item:hover:before {
+    opacity: 1;
+  }
+
+}
+
+/* ナビのリンク */
+.nav-items__item a {
+  color: black;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 960px) {
+  .nav-items__item a {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+
+/* ハンバーガーメニュー */
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+}
+
+.hamburger {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 960px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* ハンバーガーメニューの線 */
+.hamburger span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+}
