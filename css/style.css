@@ -6,12 +6,15 @@ ul,li {
   list-style: none;
 } 
 
-.html {
+html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .container {
-  overflow: auto;
+  /* overflow: auto; */
+  overflow-y: scroll;
   scroll-snap-type: y proximity;
   height: 100vh;
   display: flex;
@@ -21,7 +24,7 @@ ul,li {
 :root {
   --scroll-scroll-snap-type: y proximity;
   /* --sstart-scroll-snap-start: */
-  --padding: 9vw 0 4vw 5vw ;
+  --padding: 10vw 0 4vw 5vw ;
 }
 
 .title {
@@ -44,7 +47,6 @@ main {
 
 .area {
   /* scroll-snap-align: start; */
-  
   height: 100vh;
   width: 100vw;
   padding: var(--padding);
@@ -117,6 +119,7 @@ main {
 }
 
 .projects .pic {
+  cursor: zoom-in;
   align-items: center;
   height: 100%;
   width: 100%;
