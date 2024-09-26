@@ -179,6 +179,7 @@ main {
 
 .join {
   padding: var(--padding);
+  padding-top: 30vh;
   display: flex;
   flex-direction: column;
   text-align: center;
