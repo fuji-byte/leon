@@ -1,4 +1,4 @@
-.home h1{
+/* .home h1{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -10,4 +10,37 @@
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 500;
   font-style: normal;
+} */
+
+.home h1{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.home p{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
+  /* font-size: px; */
+}
+
+.Versear{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.middleline{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header-title{
+  margin-left: 20px;
 }
