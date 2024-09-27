@@ -129,13 +129,13 @@
   line-height:1;
 }
 
-.contents{
+/* .contents{
   border-radius: 50px;
   background: #eeeeee;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   border: 0px solid #000;
   margin-top: 50px;
-}
+} */
 
 .projects{
   background-color: #eeeeee;

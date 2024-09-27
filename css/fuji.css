@@ -1,0 +1,98 @@
+/* このcssはレスポンシブ専用のcssです。by fuji */
+
+@media screen and (max-width: 960px) {
+
+    .Versear {
+        font-size: 30px;
+    }
+    .middleline {
+        font-size: 15px;
+    }
+    .header__title {
+        width: 260px;
+        /* yusuke.cssの打ち消し */
+        margin-left: 0;
+    }
+
+    /* ホーム */
+    .home h1 {
+        font-size: 60px;
+    }
+
+    .about {
+        padding-top: 120px;
+    }
+    .about h1 {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+
+    .aboutpic {
+        top: 50%;
+        left: 10%;
+        height: 50vw;
+        width: 80%;
+    }
+
+    .projects {
+        padding-top: 120px;
+        padding-left: 0;
+    }
+
+    .projects .title,.subtitle {
+        padding-left: 40px;
+    }
+    
+    .projects ul {
+        overflow-x: auto;
+        white-space: nowrap;
+        height: 100%;
+        /* position: absolute; */
+        padding-bottom: 20px;
+    }
+    .projects li {
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+    }
+
+    .contents {
+        position: relative;
+        top: 50px;
+        /* overflow-x: scroll; */
+        /* overflow: hidden; */
+        width: 100vw;
+        padding-left: 10px;
+        display: flex;
+        height: 60%;
+    }
+    
+    .projects .content {
+        height: 90%;
+        width: 70vw;
+        box-shadow: none;
+        border: none;
+    }
+
+    .sur {
+        padding-left: 5vw;
+        width: 60vw;
+        height: 45vw;
+        padding-bottom: 2vw;
+    }
+    
+    .projects .date {
+        font-weight: bold;
+        padding: 8px 0 4px;
+        font-size: 15px;
+    }
+    
+    .projects .minititle {
+        font-size: 30px;
+        padding-bottom: 8px;
+    }
+    
+    .projects .sentence {
+        font-size: 15px;
+    }
+}
