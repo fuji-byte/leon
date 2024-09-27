@@ -21,7 +21,7 @@ html {
 :root {
   /* --sstart-scroll-snap-start: */
   --scroll-scroll-snap-type: y proximity;
-  --padding: 10vw 0 4vw 5vw ;
+  --padding: 10vw 10px 4vw 5vw ;
 }
 
 .title {
@@ -247,6 +247,7 @@ main {
 .btn {
   /* 枠線を消す */
   /* border: none; */
+  position: relative;
   background-color: #fff;
   width: 200px;
   height: 75px;
@@ -259,7 +260,7 @@ main {
 /* フッター */
 
 footer {
-  position: relative;
+  position: absolute;
   top: 400vh;
   width: 100dvw;
   background-color: #202523;
