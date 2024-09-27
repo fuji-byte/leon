@@ -70,26 +70,12 @@ main {
   font-size: 20px;
 }
 
-/* .home .title1{
-  position: relative;
-  top: 20vh;
-  z-index: 6;
-  width: 50%;
-}
-
-.home .title2{
-  position: relative;
-  z-index: 7;
-  width: 50%;
-} */
-
 /* スクロールダウン */
 .scrolldown {
   position: absolute;
   top: 0;
   padding-top: 90vh;
   height: 100vh;
-  /* padding-top: 90vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,6 +85,16 @@ main {
   color: #ffffff;
   font-size: 20px;
 }
+
+@keyframes scroll-animation {
+  0%,100%{transform: translateY(0);}
+  50%{transform: translateY(10px);}
+}
+
+.scrolldown i {
+  animation: scroll-animation 1.5s infinite;
+}
+
 /* アバウト */
 
 .about {
@@ -281,6 +277,10 @@ footer i {
   float: right;
   font-size: 50px;
   padding-right: 20px;
+}
+
+footer a {
+  color: #fff;
 }
 
 /* ヘッダー */
