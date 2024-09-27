@@ -109,6 +109,10 @@ main {
   top: 100vh;
 }
 
+.about h2 {
+  padding-bottom: 20px;
+}
+
 .about p {
   font-size: 20px;
   padding-top: 25px;
@@ -122,6 +126,10 @@ main {
   top: 200vh;
   display: flex;
   flex-direction: column;
+}
+
+.projects h1 {
+  padding-bottom: 20px;
 }
 
 .contents {
