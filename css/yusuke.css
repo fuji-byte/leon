@@ -25,8 +25,10 @@
   font-weight: 700;
   font-style: normal;
   line-height: 1.2;
-  color:#262626;
+  /* color:#262626; */
+  color: #eeeeee;
   font-size: 120px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .home p{
@@ -35,9 +37,11 @@
   font-style: italic;
   margin-top: 15px;
   margin-left: 4px;
-  color:#262626;
+  /* color:#262626; */
+  color: #eeeeee;
   letter-spacing: 0.3em;
   font-size: 24px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   /* font-size: px; */
 }
 
@@ -89,8 +93,9 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  color: #262626;
+  color: #eeeeee;
   /* width: 100vw; */
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about{
@@ -100,7 +105,7 @@
 .title{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -113,12 +118,15 @@
 
 .about h2{
   color: #eeeeee;
+  padding-left: 5px;
   padding-bottom: 5px;
+  font-size: 32px;
 }
 
 .about h1{
   color: #eeeeee;
   /* font-size: 80px; */
+  font-size: 70px;
 }
 
 .about p{
@@ -127,7 +135,21 @@
   font-weight: 500;
   font-style: normal;
   line-height:1;
+  font-size: 22px;
 }
+
+/* 画像を角丸＆ドロップシャドウを自然に */
+.aboutpic{
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.projects .content {
+  background-color: #eeeeee;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: 0px solid #000;
+}
+
 
 /* .contents{
   border-radius: 50px;
@@ -139,4 +161,80 @@
 
 .projects{
   background-color: #eeeeee;
+}
+
+.projects h1{
+  color: #262626;
+  font-size: 32px;
+  padding-left: 5px;
+}
+
+.projects h2{
+  color: #262626;
+  font-size: 70px;
+}
+
+.projects h1 {
+  padding-bottom: 5px;
+}
+
+.projects .date{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #262626;
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+.projects .minititle{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height:1.2;
+  color: #262626;
+  font-size: 26px;
+  padding-bottom: 8px;
+}
+
+.projects .sentence{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height:1.2;
+  color: #262626;
+  font-size: 14px;
+}
+
+.join{
+  padding-top: 20vh;
+}
+
+.join .title{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #8dc5ff;
+  font-size: 26px;
+  letter-spacing: 1em;
+  padding-bottom: 6px;
+}
+
+.join .subtitle{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #eeeeee;
+  padding-bottom: 60px;
+  font-size: 110px;
+}
+
+.join h3{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #eeeeee;
+  font-size: 26px;
 }
