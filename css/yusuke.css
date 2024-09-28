@@ -120,13 +120,13 @@
   color: #eeeeee;
   padding-left: 5px;
   padding-bottom: 5px;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .about h1{
   color: #eeeeee;
   /* font-size: 80px; */
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .about p{
@@ -135,7 +135,7 @@
   font-weight: 500;
   font-style: normal;
   line-height:1;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 /* 画像を角丸＆ドロップシャドウを自然に */
@@ -237,4 +237,33 @@
   font-style: normal;
   color: #eeeeee;
   font-size: 26px;
+}
+
+.btn {
+  /* 枠線を消す */
+  /* border: none; */
+  position: relative;
+  background-color: #fff;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #262626;
+  width: 230px;
+  height: 65px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 0px solid#000;
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.atext{
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #262626;
+  font-size: 26px;
+}
+
+.btnbox {
+  gap: 45px;
 }
