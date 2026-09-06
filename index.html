@@ -38,7 +38,8 @@
             <!-- <input type="button" class="joinbtn" value="JOIN US" href="#join"> -->
           </ul>
         </nav>
-        <button class="header__hamburger hamburger" id="js-hamburger">
+        <button class="header__hamburger hamburger" id="js-hamburger" type="button" aria-label="メニューを開く"
+          aria-controls="js-nav" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
@@ -48,17 +49,17 @@
 
     <main>
       <!-- 本物のホーム -->
-      <div class="home">
+      <div class="home" id="home">
         <!-- movie.cssも変更してね -->
         <!-- 動画真ん中 -->
-        <video src="movie/versear_data_mp4.mp4" autoplay muted loop></video>
+        <video src="movie/versear_data_mp4.mp4" autoplay muted loop playsinline></video>
         <!-- 動画右側 -->
         <!-- <video src="movie/versear_data_mp4.mp4" autoplay muted loop></video> -->
         <h1>共に学び、<br>共に高めあう</h1>
         <p>Versear Programming university club</p>
       </div>
       <!-- 擬似ホーム -->
-      <div class="scrolldown" id="home">
+      <div class="scrolldown">
         <h2>SCROLL DOWN</h2>
         <i class="fa-solid fa-angle-down"></i>
       </div>
@@ -113,7 +114,7 @@
             <li>
               <div class="content">
                 <div class="sur">
-                  <a  class="pic grid-gallery" href="image/noimage_new.jpg">
+                  <a class="pic grid-gallery" href="image/noimage_new.png">
                     <img class="pic grid-gallery" src="image/noimage_new.png" alt="no image">
                   </a>
                 </div>
@@ -159,7 +160,6 @@
           </div>
         </div>
         </div>
-      </div>
     </main>
     <footer>
       <div class="icon">
